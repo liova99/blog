@@ -23,13 +23,13 @@ html, body {
 
 
 #header {
-	margin: auto;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	border: 1px solid #b4b2ae;
+	/*margin: auto;*/
+	/*margin-top: 10px;*/
+	/*margin-bottom: 10px;*/
+	/*border: 1px solid #b4b2ae;*/
 	background-color: #b4b2ae;
-	border-radius: 5px;
-	width: 80%;
+	/*border-radius: 5px;*/
+	width: 100%;
 }
 
 .navbar{
@@ -43,13 +43,25 @@ div.navbar a {
 	text-decoration: none;
 	color: white;
 }
+
 div.navbar a:hover {
 	font-size: 1em;
 	text-decoration: none;
 	color: #efefef;
 }
 
+.bgimage {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/old_typemashin.jpg');
+	background-size: 100%;  
+ 	background-repeat: no-repeat;
+ 	
 
+ 	
+   }
+  
 
 /* =========================== */
 

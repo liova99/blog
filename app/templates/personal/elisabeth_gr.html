@@ -1,13 +1,19 @@
 {% extends "base.html" %}
+{% block top%}
+
 <! DOCTYPE html>
 <html lang="el">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ title }}</title>
-</head>
+
+{% endblock top %}
+
+{% block head %}
+{{ super() }}
+{% endblock head %}
+
+
 {% block content %}
-<body>
-    <div class="blog_post">
+
+<div class="blog_post">
         <h3>Το γράμμα ενός βρικόλακα</h3><br>
 
         <p>Αγαπητή Ελισαβέτα,</p><br>
@@ -45,12 +51,6 @@
         <p class="post_date">Kelesidis Levan 7.11.2012 </p>
 
     </div>
-
-
-
-
-</body>
-
 
 {% endblock  %}
 
