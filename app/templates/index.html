@@ -12,9 +12,22 @@
 {% block content %}
 
 
-    <div >
-    <img src="static/img/old_typemashin.jpg" style="position: relative;">
-        <h3 style="position: absolute;z-index: 100;">Test</h3>
+    <div class="hero">
+
+        <header id="header">
+                <div class="navbar"><a href="{{ url_for('index') }}"><p> Home</p> </a></div>
+                <div class="navbar"><a href="#"><p> Feed</p> </a></div>
+                <div class="navbar"><a href="#"><p> IT</p> </a></div>
+                <div class="navbar"><a href="#"><p> Personal</p> </a></div>
+                <div class="navbar"><a href="#"><p> About</p> </a></div>
+                <div class="navbar"><a href="#"><p> Contact</p> </a></div>
+        </header>
+
+        <!--<div id="welcome">-->
+        <!--<p id="levan">&copy;Kelesidis Levan</p>-->
+        <div id="welcome_button"><a href="#" >Welcome</a> </div>
+        <!--</div>-->
+
     </div>
 
 <div class="blog_preview" >
