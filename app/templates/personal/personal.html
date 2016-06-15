@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block top%}
+
+<! DOCTYPE html>
+<html lang="en">
+
+{% endblock top %}
+
+{% block head %}
+{{ super() }}
+{% endblock head %}
+
+{% block content %}
+
+<div id="personal_bg">
+
+    <div class="blog_preview" >
+        <a href="{{ url_for('elisabeth_rus') }}"><h3> Письмо вампира </h3></a><br>
+
+        <p>&nbsp;&nbsp;Дорогая Елизавета,  </p><br>
+
+        <p>&nbsp;&nbsp;
+        Прости меня за то, что я собираюсь сделать. Жизнь стала бессмысленной, серой,
+        я чувствую себя как в клетке, как в наручниках,
+        а путь к свободе только один - смерть! </p><br>
+        <a href="{{ url_for('elisabeth_rus') }}"><p class="read_more"> Read More >>> </p></a>
+
+        </div>
+
+    <div class="blog_preview">
+        <a href="{{ url_for('elisabeth_gr') }}"><h3>Το γράμμα ενός βρικόλακα</h3></a><br>
+
+                <p>Αγαπητή Ελισαβέτα,</p><br>
+        <p>&nbsp;&nbsp;
+            Ελπίζω να με συγχωρέσεις για αυτό που ετοιμάζομαι να κάνω.
+        Η ζωή μου έχασε το νόημα της, νιώθω σαν φυλακισμένος σαν αλυσοδεμένος και υπάρχει
+        μόνο ένας δρόμος προς την ελευθερία – ο θάνατος!</p><br>
+
+                <a href="{{ url_for('elisabeth_gr') }}"><p class="read_more">Read More >>></p></a>
+
+    </div>
+
+    <div class="blog_preview"> <a href="{{ url_for('poem_rus') }}"><h3>Ты приходишь, когда не надо</h3></a><br>
+
+        <p>
+        Ты приходишь, когда не надо,<br>
+        Когда сердце тупо молчит.<br>
+        Когда осень гуляет садом,<br>
+        А хандра мою груд точит.<br>
+        Когда сердцу не до парада,<br>
+        Когда солнце уйдет на бекрень,<br>
+        Когда в водке одна услада<br>
+        Ну, а душу съедает лень.<br><br></p>
+
+        <a href="{{ url_for('poem_rus') }}"><p class="read_more">Read More >>></p></a>
+
+    </div>
+
+</div>
+
+
+
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}

@@ -7,10 +7,21 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    title = "Home"
+    title = "Welcome"
 
     return render_template('index.html', title = title)
 
+@app.route("/feed/")
+def feed():
+    title = 'Feed'
+
+    return render_template('feed.html', title = title)
+
+@app.route('/personal/')
+def personal():
+    title = 'Personal'
+
+    return render_template('personal/personal.html', title = title)
 
 @app.route('/personal/elisabeth_gr/')
 def elisabeth_gr():
