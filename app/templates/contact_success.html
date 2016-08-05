@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+<! DOCTYPE html >
+<html lang="en">
+
+{% block head%}
+{{ super() }}
+
+<!--{# Redirect tag #}-->
+<!--<meta http-equiv="refresh" content="3; url=http://www.kelesidis.de/" />-->
+
+{% endblock head %}
+
+
+{% block content %}
+<body >
+    <div id="container">
+        <div id="content">
+
+            <div id="success_bg">
+
+                <div id="contact_success">
+                    <h3>Thank's for your message. We'll get back to you shortly
+                    <br><br>
+                    Redirecting in 3 seconds...</h3>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+{% endblock %}
+
+
+
+{% block footer %}
+{{ super() }}
+{% endblock %}
+
+</html>

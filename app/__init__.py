@@ -6,17 +6,14 @@ from wtforms import (StringField, BooleanField, TextAreaField, SubmitField,
 from flask_mail import Mail, Message
 from contact import contact_form
 
+from passwords import *
+
 mail = Mail()
 
 app = Flask(__name__)
 
-app.secret_key = 'development key'
-
-app.config["MAIL_SERVER"] = "smtp.gmail.com"
-app.config["MAIL_PORT"] = 465
-app.config["MAIL_USE_SSL"] = True
-app.config["MAIL_USERNAME"] = 'levan.list@gmail.com'
-app.config["MAIL_PASSWORD"] = ''
+# initialise config file
+app.config.from_object('config')
 
 mail.init_app(app)
 
@@ -75,10 +72,16 @@ def contact():
             %s
             """ % (form.name.data, form.email.data, form.message.data)
             mail.send(msg)
-            return "Message was successfully sent"#, sleep(3), redirect('http://kelesidis.de/')
+            return render_template('contact_success.html')
     elif request.method == "GET":
         return render_template("contact.html", form=form)
 
+
+@app.route("/contact_success/")
+def contact_success():
+    title = "Message sent"
+
+    return render_template("contact_success.html", title=title)
 
 
 if __name__ == "__main__":

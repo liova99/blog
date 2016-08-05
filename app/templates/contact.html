@@ -26,15 +26,15 @@
                 <div id="contact">
                             <!--{# Flash message #}-->
                     {% for message in form.name.errors %}
-                      <div class="flash">{{ message }}</div>
+                      <div class="flash">*{{ message }}</div>
                     {% endfor %}
 
                     {% for message in form.email.errors %}
-                      <div class="flash">{{ message }}</div>
+                      <div class="flash">*{{ message }}</div>
                     {% endfor %}
 
                     {% for message in form.message.errors %}
-                      <div class="flash">{{ message }}</div>
+                      <div class="flash">*{{ message }}</div>
                     {% endfor %}
 
 

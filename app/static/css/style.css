@@ -205,6 +205,27 @@ div.blog_preview a:hover {
 
 /****** contact ********/
 
+#success_bg{
+    background-image: url('../img/swallow_brings_message.png');
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#contact_success {
+    width: 700px;
+    height: 500px;
+    margin: 50px auto;
+    font-size: 1.3em;
+    font-family: "georgia";
+    padding: 30px;
+    background-color: rgba(255,255,255, 0.9);
+    border-radius: 5px;
+    box-shadow: -0px 0px 15px 8px #b7b7b7;
+}
+div#contact_success h3 {
+    margin: 180px auto;
+}
+
 #contact_wrapper {
     width: 980px;
     height: 500px;
@@ -321,14 +342,6 @@ form input#submit:hover {
   background-image: linear-gradient(top, #dbdbdb, #cccccc);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#dbdbdb, endColorstr=#cccccc);
 */}
 
-#contact_success {
-    width: 700px;
-    margin: 0 auto;
-    font-size: 1.3em;
-    font-family: "georgia"
-}
-
-
 
 /* ********************** */
 
@@ -345,4 +358,11 @@ form input#submit:hover {
 	color: white;
 	padding: 1.3em;
 	font-size: 0.8em;
+}
+
+/* Message flashing */
+.flash {
+  background-color: #FBB0B0;
+  padding: 10px;
+  width: 400px;
 }
