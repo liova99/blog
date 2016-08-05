@@ -32,10 +32,11 @@
     {% block header %}
     <div class="navbar"><a href="{{ url_for('index') }}"><p> Home</p> </a></div>
     <div class="navbar"><a href="{{ url_for('feed') }}"><p> Feed</p> </a></div>
-    <div class="navbar"><a href="#"><p> IT</p> </a></div>
     <div class="navbar"><a href="{{ url_for('personal') }}"><p> Personal</p> </a></div>
-    <div class="navbar"><a href="#"><p> About</p> </a></div>
-    <div class="navbar"><a href="#"><p> Contact</p> </a></div>
+    <div class="navbar"><a href="{{ url_for('contact') }}"><p> Contact</p> </a></div>
+
+    <!--<div class="navbar"><a href="#"><p> IT</p> </a></div>-->
+    <!--<div class="navbar"><a href="#"><p> About</p> </a></div>-->
 {% endblock header %}
 </header>
 
