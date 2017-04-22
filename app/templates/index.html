@@ -4,6 +4,7 @@
 
 <head>
 
+
     <meta charset="UTF-8">
     <title>{{ title }}</title>
 
@@ -24,23 +25,24 @@
 </script>
 <!-- {#---------------------------------End Google A.--------------------------------------- #}-->
 
+<!-- {# Redirect Link #} -->
+  <meta http-equiv="refresh" content="2; url=http://blog.kelesidis.de/feed/" />
+
+
 </head>
 
     <div class="hero">
 
-        <header id="header_index">
+        <!-- <header id="header_index">
             <div class="navbar"><a href="{{ url_for('index') }}"><p> Home</p> </a></div>
             <div class="navbar"><a href="{{ url_for('feed') }}"><p> Feed</p> </a></div>
             <div class="navbar"><a href="{{ url_for('personal') }}"><p> Personal</p> </a></div>
             <div class="navbar"><a href="{{ url_for('contact') }}"><p> Contact</p> </a></div>
-
-            <!--<div class="navbar"><a href="#"><p> IT</p> </a></div>-->
-            <!--<div class="navbar"><a href="#"><p> About</p> </a></div>-->
-        </header>
+        </header> -->
 
         <!--<div id="welcome">-->
         <!--<p id="levan">&copy;Kelesidis Levan</p>-->
-        <div id="welcome_button"><a href="{{ url_for('feed') }}" >Welcome</a> </div>
+        <div id="welcome_button"><a href="{{ url_for('feed') }}" >Loading...</a> </div>
         <!--</div>-->
 
     </div>

@@ -61,6 +61,7 @@ div.navbar a {
 div.navbar a:hover {
 	font-size: 1em;
 	text-decoration: none;
+    transition: color .2s ease-in-out;
 	color: white;
 	/*color: #efefef;*/
 }
@@ -74,51 +75,19 @@ div.navbar a:hover {
 
 #welcome_button{
 	position: absolute;
-	/*top:0;*/
-    bottom: 0;
-    /*left: 0;*/
-    right: 0;
-    height: 50px;
     width: 100%;
     margin:  auto;
-    margin-bottom: 90px;
+    margin-top: 30%;
     text-align: center;
-    /*background-color: rgba(0, 0, 0, 0.8);*/
-    /*background-color: rgb(0, 0, 0.8);*/
-    /*border-radius: 4px;*/
-    /*text-decoration: none;*/
-    /*text-transform: none;*/
-    /*padding: 5px 7px;*/
-    /*vertical-align: middle;*/
-    /*border: 2px rgba(255, 255, 255, 0.4) solid;*/
-    /*font-family: 'the girl next door';*/
-    /*white-space: nowrap;*/
-    /*cursor: pointer;*/
-    /*overflow: hidden;*/
-    /*background: none;*/
-    /*z-index: 1;*/
-    /*-webkit-appearance: none;    */
-    /*padding: 5px 5px;*/
-    /*font-weight: 700;*/
 }
 
 div#welcome_button a{
 	/*position: absolute;*/
 	text-decoration: none;
-	color: rgba(160, 115, 92, 0.8);
+	color: rgba(255, 255, 255, 0.8);
 	font-weight: 500;
-	font-size: 3.5em;
+	font-size: 5.5em;
 	font-family: "Waiting for the Sunrise";
-    /*font-family: "Give You Glory","Waiting for the Sunrise", "The Girl Next Door";*/
-/*	background-color: #b4b2ae;
-	border-radius: 5px;
-	width: 4em;
-	height: 1em;
-	top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-*/	/*padding: 2em;*/
 }
 
 div#welcome_button a:hover{
@@ -138,7 +107,6 @@ div#welcome_button a:hover{
 
 	/* 0px left right, 0 px, up or down, 15px blur, 8px size*/
 	box-shadow: -0px 0px 15px 8px  #b7b7b7;
-
 }
 
 div.blog_post h3 {
@@ -366,4 +334,55 @@ form input#submit:hover {
   padding: 10px;
   width: 400px;
 }
+
+/******** Media queries / responsive **************************************/
+
+/* res_big */
+@media all and (max-width: 1100px) and (min-width: 730px) {
+    div.navbar a { font-size: 1.5em;    }
+    div.navbar a:hover {font-size: 1.5em;}
+
+
+    .blog_preview {width: 75%; font-size: 1.3em;}
+    .blog_post {width: 75%;}
+
+    #contact_wrapper {width: auto; height: auto; margin: 15px; }
+    #contact_info{float: none; width: 30%; max-width: 300px; margin: 4em auto 4em 10em;}
+    #contact { width: 80%; margin: 2em auto; float: none; max-width: 530px;}
+    form input#submit {display: block;}
+
+} /*end res_big 1100-730*/
+
+@media all and (max-width: 729px) {
+
+    div.navbar a { font-size: 1.2em;    }
+    div.navbar a:hover {font-size: 1.2em;}
+
+
+    .blog_preview {width: 75%; font-size: 1em;}
+    .blog_post {width: 75%; font-size: 1em;}
+
+    #contact_wrapper {width: auto; height: auto; margin: 15px;}
+    #contact_info{display: block; float: none; width:auto; max-width: 300px; margin: 5em auto 3em auto;}
+    #contact { width: 80%; margin: 2em auto; float: none; max-width: 530px;}
+
+    form input#name, form input#email {width: 100%;}
+    form textarea#message {width: 100%;}
+    form input#submit {display: block;}
+
+    .flash {width: 90%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
